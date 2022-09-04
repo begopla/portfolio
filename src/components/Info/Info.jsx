@@ -4,20 +4,17 @@ import {Text,
         Center,
         Flex,
         useColorModeValue,
-	      useColorMode,
         Button
       } from '@chakra-ui/react';
-import './Home.css'
+import { HashLink } from 'react-router-hash-link';
 
+const Info = () => {
 
-
-const Home = () => {
-
-  const { colorMode, toggleColorMode } = useColorMode();
+  
   return (
-    <div>
+    <section className='mainInfo' >
       
-    <Box bg={useColorModeValue('white', 'gray.700')} height='95vh' className='home'>
+    
     <Text height='9rem'></Text>
    
     <Flex direction="column" align="center">
@@ -34,16 +31,15 @@ const Home = () => {
          I'm a full stack developer, with mechanical engineer roots. I am tech lover and experienced project manager.
          </Box>
          </Center>
-         <Button bg={useColorModeValue('blue.100', 'gray.900')} width ='20vw' mt='5vh'  >PROJECTS</Button>
+         <Button bg={useColorModeValue('blue.200', 'gray.900')} width ='20vw' mt='5vh'  ><HashLink to='#projects'>PROJECTS</HashLink></Button> 
     </Flex>
 
 
-    </Box>
     
     
     
-    </div>
+    </section>
   )
 }
 
-export default Home
+export default Info
