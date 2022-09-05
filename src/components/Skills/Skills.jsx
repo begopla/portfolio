@@ -10,10 +10,9 @@ import {
   Text,
   useColorModeValue
 } from "@chakra-ui/react";
-import './Skills.css'
 const Skills = () => {
   return (
-    <Box id="skills" color={useColorModeValue('black', 'black' )}>
+    <Box id="skills" >
       <Flex direction="column" align="flexStart" >
         <Box as="h4" fontSize="3xl" fontWeight="600" mt="10vh" ml='5vw' >
           My skills
@@ -33,22 +32,22 @@ const Skills = () => {
               <Text fontWeight="500">Main Languages</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
-                  <Button colorScheme="gray">HTML5</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>HTML5</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">CSS3</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>CSS3</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">SASS</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>SASS</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">JavaScript</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>JavaScript</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">TypeScript</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>TypeScript</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">C programming</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>C programming</Button>
                 </WrapItem>
               </Wrap>
             </Stack>
@@ -66,16 +65,16 @@ const Skills = () => {
              <Text fontWeight="500">JS Frameworks</Text>
              <Wrap spacing={4} mt="4vh">
                 <WrapItem>
-                  <Button colorScheme="gray">Node.js</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Node.js</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">Handlebard</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Handlebard</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">Bootstrap</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Bootstrap</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">Chakra UI</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Chakra UI</Button>
                 </WrapItem>
               </Wrap>
             </Stack>
@@ -95,11 +94,11 @@ const Skills = () => {
               <Text fontWeight="500">JS Libraries</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
-                  <Button colorScheme="gray">React</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>React</Button>
                 </WrapItem>
 
                 {/* <WrapItem>
-                        <Button colorScheme='gray'>Vue</Button>
+                        <Buttonbg={useColorModeValue("blue.100", "gray.200")}>Vue</Button>
                     </WrapItem>
                   
                    */}
@@ -120,13 +119,13 @@ const Skills = () => {
               <Text fontWeight="500">Backend</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
-                  <Button colorScheme="gray">Postman</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Postman</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">Axios</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Axios</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">REST API</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>REST API</Button>
                 </WrapItem>
               </Wrap>
             </Stack>
@@ -146,13 +145,13 @@ const Skills = () => {
               <Text fontWeight="500">Database</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
-                  <Button colorScheme="gray">SQL</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>SQL</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">MongoDB</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>MongoDB</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">mongoose</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>mongoose</Button>
                 </WrapItem>
               </Wrap>
             </Stack>
@@ -172,10 +171,10 @@ const Skills = () => {
               <Text fontWeight="500">Version Control</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
-                  <Button colorScheme="gray">GitHub</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>GitHub</Button>
                 </WrapItem>
                 <WrapItem>
-                  <Button colorScheme="gray">Netlify</Button>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Netlify</Button>
                 </WrapItem>
               </Wrap>
             </Stack>

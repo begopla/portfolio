@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 	return (
 		<>
-			<Box bg={useColorModeValue('white', 'gray.900')} px={4} pos={'fixed'} width={'100%'} zIndex={1} boxShadow={"sm"}>
+			<Box bg={useColorModeValue('white', 'gray.900')} px={4} pos={'fixed'} width={'100%'} zIndex={3} boxShadow={"sm"}>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<HashLink to='#top'>
 						<Flex alignItems={'center'}>

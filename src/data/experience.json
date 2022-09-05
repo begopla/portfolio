@@ -9,7 +9,7 @@
           "Backend: Server-side and data modeling complexity",
           "Single-page applications using React.js and the MERN stack"
         ],
-        "date": "Feb22 - Aug22",
+        "date": "Feb22 - Aug22"
     },   
     {
         "id": "1",
@@ -33,7 +33,8 @@
         "id": "3",
         "type": "Education",
         "institution": "HULT",
-        "name": " Master in Business and Administration"
+        "name": " Master in Business and Administration",
+        "date": "Oct20 - Aug21"
     },
     {
         "id": "4",
