@@ -25,7 +25,7 @@ import {
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa";
 import { BiRocket } from "react-icons/bi";
 import { BsCheckCircle } from "react-icons/bs";
 import { MdTimeline } from "react-icons/md";
@@ -42,21 +42,23 @@ export default function Navbar() {
 		<>
 			<Box bg={useColorModeValue('white', 'gray.900')} px={4} pos={'fixed'} width={'100%'} zIndex={1} boxShadow={"sm"}>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-					<NavLink to='/'>
+					<HashLink to='#top'>
 						<Flex alignItems={'center'}>
 						  <Avatar name='Begona Pla' size='md' src='https://res.cloudinary.com/dhdkj4oxv/image/upload/v1662112095/avatar_profile_picture_Begona_Pla_pkaclo.png'/>
 							<Hide below='800px'><Text className="name" fontWeight="600" ml='2vw'>BEGOÑA PLA</Text></Hide>
 						</Flex>
-					</NavLink>
+					</HashLink>
 					<Flex alignItems={'center'}>
 						<Stack direction={'row'} spacing={7}>
-							<Hide below ='768px'>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 
+							  <Hide below ='768px'>
                   <HashLink to='/#about'><Text fontWeight="500" mr='2vw'>ABOUT </Text></HashLink>
-									<HashLink  to='/#projects'><Text fontWeight="500" mr='2vw'>PROJECTS </Text></HashLink>
 									<HashLink to='/#skills'><Text  fontWeight="500" mr='2vw'>SKILLS</Text></HashLink>
+									<HashLink  to='/#projects'><Text fontWeight="500" mr='2vw'>PROJECTS </Text></HashLink>
                   <HashLink to='/#experience'><Text fontWeight="500" mr='2vw'>EXPERIENCE</Text></HashLink> 
+                </Hide>
+                <Hide below ='400px'>
                   <IconButton
                     as={Link}
                     mr='1vw'
@@ -86,13 +88,16 @@ export default function Navbar() {
                   <Button onClick={toggleColorMode}>
 								    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							    </Button>
+                </Hide>
+                <Show below="400px">
+
+                  <Button onClick={toggleColorMode}>
+								      {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+							    </Button>
+                </Show>
                 </Flex>
-              </Hide>
               <Show below ='768px'>
-                <Button onClick={toggleColorMode}>
-								{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-							  </Button>
-				                
+              				                
               <Menu >
                 <MenuButton
                   as={Button}
@@ -124,18 +129,6 @@ export default function Navbar() {
                       </HStack>
                     </MenuItem>
                   </HashLink>
-                  <HashLink to="/#projects">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={BsBook}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>Projects</Text>
-                      </HStack>
-                    </MenuItem>
-                  </HashLink>          
                   <HashLink  to="/#skills">
                     <MenuItem>
                       <HStack>
@@ -148,6 +141,18 @@ export default function Navbar() {
                       </HStack>
                     </MenuItem>
                   </HashLink>
+                  <HashLink to="/#projects">
+                    <MenuItem>
+                      <HStack>
+                        <Icon
+                          as={BsBook}
+                          size={18}
+                          color={useColorModeValue("blue.500", "blue.200")}
+                        />
+                        <Text>Projects</Text>
+                      </HStack>
+                    </MenuItem>
+                  </HashLink>          
                   <HashLink to="/#experience">
                     <MenuItem>
                       <HStack>
@@ -160,7 +165,7 @@ export default function Navbar() {
                       </HStack>
                     </MenuItem>
                   </HashLink>
-                    
+                    <Hide above="400px"> 
                     <MenuItem>
                       <HStack>
                        <IconButton
@@ -190,8 +195,9 @@ export default function Navbar() {
                         }}
                       /> 
                       </HStack>
-                    </MenuItem>
-                </MenuList> 
+                    </MenuItem> 
+                    </Hide>
+                </MenuList>  
               </Menu>             
               </Show>	
 						</Stack>

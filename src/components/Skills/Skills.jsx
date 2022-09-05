@@ -8,16 +8,17 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  Center,
+  useColorModeValue
 } from "@chakra-ui/react";
+import './Skills.css'
 const Skills = () => {
   return (
-    <section id="skills">
-      <Flex direction="column" align="flexStart" ml="10vw">
-        <Box as="h4" fontSize="3xl" fontWeight="600" mt="10vh" ml='15vw'>
+    <Box id="skills" color={useColorModeValue('black', 'black' )}>
+      <Flex direction="column" align="flexStart" >
+        <Box as="h4" fontSize="3xl" fontWeight="600" mt="10vh" ml='5vw' >
           My skills
         </Box>
-        <Flex direction="column" align="center" ml='10vw'>
+        <Flex direction="column" align="center" margin='0 2rem 0 2rem ' >
         <SimpleGrid columns={[1, 2, 1, 2]} >
           {/* Main Languagues */}
           <Box
@@ -29,9 +30,7 @@ const Skills = () => {
             margin={2}
           >
             <Stack>
-              <Center>
-                <Text fontWeight="500">Main Languages</Text>
-              </Center>
+              <Text fontWeight="500">Main Languages</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
                   <Button colorScheme="gray">HTML5</Button>
@@ -64,10 +63,8 @@ const Skills = () => {
             margin={2}
           >
             <Stack>
-              <Center>
-                <Text fontWeight="500">JS Frameworks</Text>
-              </Center>
-              <Wrap spacing={4} mt="4vh">
+             <Text fontWeight="500">JS Frameworks</Text>
+             <Wrap spacing={4} mt="4vh">
                 <WrapItem>
                   <Button colorScheme="gray">Node.js</Button>
                 </WrapItem>
@@ -95,9 +92,7 @@ const Skills = () => {
             margin={2}
           >
             <Stack>
-              <Center>
-                <Text fontWeight="500">JS Libraries</Text>
-              </Center>
+              <Text fontWeight="500">JS Libraries</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
                   <Button colorScheme="gray">React</Button>
@@ -122,9 +117,7 @@ const Skills = () => {
             margin={2}
           >
             <Stack>
-              <Center>
-                <Text fontWeight="500">Backend</Text>
-              </Center>
+              <Text fontWeight="500">Backend</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
                   <Button colorScheme="gray">Postman</Button>
@@ -150,9 +143,7 @@ const Skills = () => {
             margin={2}
           >
             <Stack>
-              <Center>
-                <Text fontWeight="500">Database</Text>
-              </Center>
+              <Text fontWeight="500">Database</Text>
               <Wrap spacing={4} mt="4vh">
                 <WrapItem>
                   <Button colorScheme="gray">SQL</Button>
@@ -168,7 +159,8 @@ const Skills = () => {
           </Box>
 
           {/* Version Control  */}
-          <Box
+          
+        <Box
             p={4}
             display={{ md: "flex" }}
             maxWidth="32rem"
@@ -177,10 +169,8 @@ const Skills = () => {
             margin={2}
           >
             <Stack>
-              <Center>
-                <Text fontWeight="500">Version Control</Text>
-              </Center>
-              <Wrap spacing={4} mt="4vh" width="80vw">
+              <Text fontWeight="500">Version Control</Text>
+              <Wrap spacing={4} mt="4vh">
                 <WrapItem>
                   <Button colorScheme="gray">GitHub</Button>
                 </WrapItem>
@@ -190,10 +180,11 @@ const Skills = () => {
               </Wrap>
             </Stack>
           </Box>
+          
         </SimpleGrid>
         </Flex>
       </Flex>
-    </section>
+    </Box>
   );
 };
 

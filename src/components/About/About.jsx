@@ -1,29 +1,93 @@
-import React from 'react'
-import {Flex,
-        Box,
-        Divider,
-        Text,
-      
-      } from '@chakra-ui/react';
+import React from "react";
+import {
+  Flex,
+  Box,
+  Text,
+  useColorModeValue,
+  Show,
+  Hide,
+} from "@chakra-ui/react";
 
+import "./About.css";
+import Skills from "../Skills/Skills";
 const About = () => {
   return (
-    <section className='about-container' id='about'>
-     <Flex direction="column" align="center">
-    
-    <Box  as="h2" fontSize="3xl" fontWeight="600" mt='10vh' >
-      ABOUT
+    <Box
+      className="about-container"
+      id="about"
+      color={useColorModeValue("black", "black")}
+      pb='5vh'
+    >
+      <Flex direction="column" align="center">
+        <Box as="h2" fontSize="3xl" fontWeight="600" mt="8vh">
+          <span className="about-heading">ABOUT ME</span>
+        </Box>
+        <Text mt="2vh" mb="2vh" ml="5vw" mr="5vw" fontSize="large">
+          Here you can find more information about what I do, my current
+          programming and technological skills
+        </Text>
+      </Flex>
+      <Show above="768px">
+        <Flex>
+          <Box mt="10vh" ml="5vw" mr="5vw" width="35%">
+            <Box as="h4" fontSize="3xl" fontWeight="600">
+              Get to know me!
+            </Box>
+            <Text mt="2vh" >
+              {/* Passioned about technology, I'm devoted to make people's life easier
+          by making technology available.*/}
+              I'm a well-rounded engineer and I have found my passioned in
+              bulding successfull products.
+            </Text>
+            <Text mt='1vh'>
+            I build{" "}
+          <span className="highlighted"> front and backend websites </span> and
+          web application, check you my work in the{" "}
+          <span className="highlighted">projects</span> section.
+            </Text>
+            <Text mt="1vh">
+              I'm open to new projects and{" "}
+              <span className="highlighted">job oppotunities </span> where I can
+              contribute, learn and grow. If you have an oppotunities that
+              matches my skills and experience,{" "}
+              <span className="highlighted">contact me!</span>
+            </Text>
+          </Box>
+
+          <Skills />
+        </Flex>
+      </Show>
+
+      <Hide above="768px">
+        <Box
+          as="h4"
+          fontSize="3xl"
+          fontWeight="600"
+          mt="4vh"
+          ml="5vw"
+          mr="5vw"
+        >
+          Get to know me!
+        </Box>
+        <Text mt="1vh" mb="2vh" ml="5vw" mr="5vw">
+          Passioned about technology, I'm devoted to make people's life easier
+          by making technology available. I'm a well-rounded engineer and I have
+          found my passioned in bulding successfull products. I build{" "}
+          <span className="highlighted"> front and backend websites </span> and
+          web application, check you my work in the{" "}
+          <span className="highlighted">projects</span> section.
+        </Text>
+        <Text mt="1vh" mb='-5vh' ml="5vw" mr="5vw">
+          I'm open to new projects and{" "}
+          <span className="highlighted">job oppotunities </span> where I can
+          contribute, learn and grow. If you have an oppotunities that matches
+          my skills and experience,{" "}
+          <span className="highlighted">contact me!</span>
+        </Text>
+        <Skills />
+      </Hide>
     </Box>
-    
-    <Text>Hello</Text> 
-    <hr
-      aria-orientation='horizontal'
-    />
-    
+  );
+};
 
-    </Flex>
-    </section>
-  )
-}
-
-export default About
+export default About;

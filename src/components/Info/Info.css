@@ -1,0 +1,15 @@
+.mainInfo{
+    position: relative;
+background-image: url('/public/unsplash-background.jpg');
+
+}
+.contact-socials {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    padding: 0.1rem;
+}
