@@ -1,0 +1,47 @@
+[
+    {
+        "id":"0",
+        "type": "Academic",
+        "institution": "Ironhack",
+        "name": "Full Stack Web Development",
+        "description": [
+          "Responsive design with HTML, CSS and JavaScript",
+          "Backend: Server-side and data modeling complexity",
+          "Single-page applications using React.js and the MERN stack"
+        ],
+        "date": "Feb22 - Aug22",
+    },   
+    {
+        "id": "1",
+        "type":"Professional",
+        "institution": "ASML",
+        "name":"Project Coordinatoe ",
+        "description": "Coordinate lithography projects supervising teams of 2-4 local engineers",
+        "date": "Feb18 - Sep20"
+    },
+    {
+        "id": "2",
+        "type":"Professional",
+        "institution": "Ford Motor Company",
+        "name":"New Project Introduction Manufacturing Engineer",
+        "description": "Analyse and manage manufacturing changes of new product launches",
+        "date": "May15 - Jan18"
+    },
+
+
+    {
+        "id": "3",
+        "type": "Education",
+        "institution": "HULT",
+        "name": " Master in Business and Administration"
+    },
+    {
+        "id": "4",
+        "type": "Education",
+        "institution": "KTH Royal Institute of Technology",
+        "name": " Master in Science in Machine Design",
+        "date": "Aug13 - Jun15"
+    }
+
+
+]
