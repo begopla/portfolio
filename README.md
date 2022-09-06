@@ -6,7 +6,7 @@ This is my personal porfolio. You can find in the sections below all information
 ## Section
 
 - **About** - Get to know me!
-- **Projects** - Github Repos & Medium Articles
+- **Projects** - Github Repos and project details
 - **Experience** - Working Experience & Education
 - **Contact** - Drop me an email!
 
