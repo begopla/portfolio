@@ -22,8 +22,6 @@ const Oneproject = ({
   let boxBg = useColorModeValue("gray.100", "#111c44");
   let secondaryBg = useColorModeValue("gray.50", "whiteAlpha.100");
   let mainText = useColorModeValue("gray.800", "white");
-  let iconBox = useColorModeValue("gray.100", "whiteAlpha.200");
-  let iconColor = useColorModeValue("brand.200", "white");
   return (
     <Box m="2rem 1rem 2rem 1rem">
       <Flex

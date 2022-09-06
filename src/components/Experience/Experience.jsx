@@ -7,7 +7,6 @@ import {
   Hide,
   Show,
 } from "@chakra-ui/react";
-import { HashLink } from "react-router-hash-link";
 import CV from "../../assets/CV Begona Pla Rubio .pdf";
 import TimeLine from "../TimeLine/TimeLine.jsx";
 import "../TimeLine/TimeLine.css";
