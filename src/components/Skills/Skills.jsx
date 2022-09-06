@@ -74,6 +74,9 @@ const Skills = () => {
                   <Button bg={useColorModeValue("blue.100", "gray.200")}>Bootstrap</Button>
                 </WrapItem>
                 <WrapItem>
+                  <Button bg={useColorModeValue("blue.100", "gray.200")}>Material UI</Button>
+                </WrapItem>
+                <WrapItem>
                   <Button bg={useColorModeValue("blue.100", "gray.200")}>Chakra UI</Button>
                 </WrapItem>
               </Wrap>

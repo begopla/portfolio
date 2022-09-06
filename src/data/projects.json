@@ -1,0 +1,46 @@
+[
+
+    {
+        "id": "2",
+        "type": "Website",
+        "name": " Localish",
+        "image":"./project-view.jpg",
+        "github_url": "https://github.com/begopla/find-a-market-client",
+        "website_url": "https://localish.netlify.app",
+        "description": "Leisurely is a mobile-first app, developed for market lovers and those who want support the local businesses by creating awarness of the small little markets every visitor should know of your city.It's a full MERN stack application, and the final project of Ironhack's Web Development Bootcamp.",
+        "technologies":[
+            "MongoDB",
+            "Mongoose",
+            "Express.js",
+            "Node.js",
+            "React JS",
+            "Axios",
+            "Cloudinary",
+            "Chrakra UI",
+            "Maps JS API"
+        ]
+    },
+    {
+        "id": "1",
+        "type": "Website",
+        "name": "Leisurely",
+        "image": "./Leisurely.jpg",
+        "github_url": "https://github.com/begopla/leisurely-app",
+        "website": "https://leisurely-app.herokuapp.com",
+        "description": "This social media platform is for people who like to join group activities. Leisurely is a full stack desktop-only designed project, focused on the back-end architecture and built as the module 2 project for Ironhack's Web Development Bootcamp." ,
+        "technologies":[
+            "MongoDB",
+            "Mongoose",
+            "Express.js",
+            "Node.js",
+            "Handlebars",
+            "Axios",
+            "Cloudinary",
+            "Nodemailer",
+            "Mapbox",
+            "Maps JS API",
+            "Bootstrap"
+        ]
+          
+    }
+]

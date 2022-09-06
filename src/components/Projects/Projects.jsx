@@ -2,26 +2,32 @@ import React from 'react'
 import {Flex,
         Box,
         Text,
-      
+        useColorModeValue,
+        SimpleGrid
       } from '@chakra-ui/react';
 import Oneproject from '../OneProject/Oneproject';
-
+import './Projects.css';
 
 const Projects = () => {
   return (
-    <section id='projects'>
+    <Box 
+      className='projects-container'
+      id='projects'
+      color={useColorModeValue("black", "black")}>
      <Flex direction="column" align="center">
       <Box  as="h2" fontSize="3xl" fontWeight="600" mt='10vh' >
       PROJECTS
       </Box>
-      <Text>Here will go the projects:</Text>
-
-      <Oneproject/>
-      <Oneproject/>
-      <Oneproject/>
-      <Oneproject/>
      </Flex>
-    </section>
+      <Flex flexWrap='wrap' justifyContent='center'>
+      <Oneproject/>
+      <Oneproject/>
+      <Oneproject/>
+      <Oneproject/>
+
+      </Flex>
+
+    </Box>
   )
 }
 
