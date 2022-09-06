@@ -1,11 +1,11 @@
 #about{
     background: #ececec60;
 }
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .about-heading::after{
         content: '';
         position: absolute;
-        top: calc(31% + 1.5rem);
+        top: 30%;
         height: 5px;
         width: 5rem;
         background: #90CDF4;
@@ -14,7 +14,7 @@
         transform: translateX(-50%);
         border-radius: 5px;
     }
-}
+} */
 
 
 
@@ -23,7 +23,7 @@
 }
 
 
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
     .about-heading::after{
         
         top: calc(29% + -1.5rem);
@@ -44,4 +44,4 @@
     .about-heading::after{
         top: calc(19% + -1.5rem);
     }
-}
+} */
