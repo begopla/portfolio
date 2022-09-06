@@ -1,6 +1,6 @@
 [
     {
-        "id":"0",
+        "id":"1",
         "type": "Academic",
         "institution": "Ironhack",
         "name": "Full Stack Web Development",
@@ -12,37 +12,35 @@
         "date": "Feb22 - Aug22"
     },   
     {
-        "id": "1",
+        "id": "2",
+        "type": "Education",
+        "institution": "HULT",
+        "name": " Master in Business and Administration",
+        "description": " Going beyond business to study every topic through a global lens, mastering working cross-culturally and leverage disruptive technologies",
+        "date": "Oct20 - Aug21"
+    },
+    {
+        "id": "3",
         "type":"Professional",
         "institution": "ASML",
-        "name":"Project Coordinatoe ",
+        "name":"Project Coordinator ",
         "description": "Coordinate lithography projects supervising teams of 2-4 local engineers",
         "date": "Feb18 - Sep20"
     },
     {
-        "id": "2",
+        "id": "4",
         "type":"Professional",
         "institution": "Ford Motor Company",
         "name":"New Project Introduction Manufacturing Engineer",
-        "description": "Analyse and manage manufacturing changes of new product launches",
+        "description": "Analyse and manage manufacturing changes of new vehicle launches",
         "date": "May15 - Jan18"
     },
-
-
     {
-        "id": "3",
-        "type": "Education",
-        "institution": "HULT",
-        "name": " Master in Business and Administration",
-        "date": "Oct20 - Aug21"
-    },
-    {
-        "id": "4",
+        "id": "5",
         "type": "Education",
         "institution": "KTH Royal Institute of Technology",
         "name": " Master in Science in Machine Design",
+        "description": "Two year master's programme in Engineering Design covering product development and its growing complexity driven by raising demands for functionality, sustainability and innovation",
         "date": "Aug13 - Jun15"
     }
-
-
 ]
