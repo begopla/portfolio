@@ -46,7 +46,7 @@ const Info = () => {
         </Box>
         <Center>
           <Box as="h5" fontSize="xl" mt="5vh" width="50vw" align="center">
-            I'm a full stack developer, building the front and backend of successfull websites and web applications 
+            I'm a full stack developer, building the front and backend of successful websites and web applications 
           </Box>
         </Center>
         <Button

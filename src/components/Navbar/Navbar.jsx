@@ -54,9 +54,10 @@ export default function Navbar() {
 
 							  <Hide below ='768px'>
                   <HashLink to='/#about'><Text fontWeight="500" mr='2vw'>ABOUT </Text></HashLink>
-									<HashLink to='/#skills'><Text  fontWeight="500" mr='2vw'>SKILLS</Text></HashLink>
+									{/* <HashLink to='/#skills'><Text  fontWeight="500" mr='2vw'>SKILLS</Text></HashLink> */}
 									<HashLink  to='/#projects'><Text fontWeight="500" mr='2vw'>PROJECTS </Text></HashLink>
                   <HashLink to='/#experience'><Text fontWeight="500" mr='2vw'>EXPERIENCE</Text></HashLink> 
+                  <HashLink to='/#contact'><Text  fontWeight="500" mr='2vw'>CONTACT</Text></HashLink>
                 </Hide>
                 <Hide below ='400px'>
                   <IconButton
@@ -129,18 +130,6 @@ export default function Navbar() {
                       </HStack>
                     </MenuItem>
                   </HashLink>
-                  <HashLink  to="/#skills">
-                    <MenuItem>
-                      <HStack>
-                        <Icon
-                          as={BsCheckCircle}
-                          size={18}
-                          color={useColorModeValue("blue.500", "blue.200")}
-                        />
-                        <Text>Skills</Text>
-                      </HStack>
-                    </MenuItem>
-                  </HashLink>
                   <HashLink to="/#projects">
                     <MenuItem>
                       <HStack>
@@ -162,6 +151,18 @@ export default function Navbar() {
                           color={useColorModeValue("blue.500", "blue.200")}
                         />
                         <Text>Experience</Text>
+                      </HStack>
+                    </MenuItem>
+                  </HashLink>
+                  <HashLink  to="/#contact">
+                    <MenuItem>
+                      <HStack>
+                        <Icon
+                          as={BsCheckCircle}
+                          size={18}
+                          color={useColorModeValue("blue.500", "blue.200")}
+                        />
+                        <Text>Contact</Text>
                       </HStack>
                     </MenuItem>
                   </HashLink>

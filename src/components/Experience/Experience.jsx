@@ -36,7 +36,7 @@ const Experience = () => {
             className="timeline-buttons"
             bg={useColorModeValue("blue.200", "gray.900")}
             width="20vw"
-            mt="5vh"
+            mb="5vh"
           >
             {" "}
             <a href={CV} download>
@@ -44,7 +44,7 @@ const Experience = () => {
               Download complete CV{" "}
             </a>
           </Button>
-          <Button
+          {/* <Button
             bg={useColorModeValue("blue.200", "gray.900")}
             width="20vw"
             mt="5vh"
@@ -52,7 +52,7 @@ const Experience = () => {
             mb="3vh"
           >
             <HashLink to="#top">Go up</HashLink>{" "}
-          </Button>
+          </Button> */}
         </Flex>
       </Hide>
 
@@ -62,6 +62,7 @@ const Experience = () => {
             className="timeline-buttons"
             bg={useColorModeValue("blue.200", "gray.900")}
             width="40vw"
+            mb='5vh'
           >
             {" "}
             <a href={CV} download>
@@ -69,14 +70,14 @@ const Experience = () => {
               Download full CV{" "}
             </a>
           </Button>
-          <Button
+          {/* <Button
             bg={useColorModeValue("blue.200", "gray.900")}
             width="40vw"
             mt="5vh"
             mb="3vh"
           >
             <HashLink to="#top">Go up</HashLink>{" "}
-          </Button>
+          </Button> */}
         </Flex>
       </Show>
     </section>
