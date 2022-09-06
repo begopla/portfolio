@@ -1,11 +1,10 @@
 import React from 'react'
 import {Flex,
         Box,
-        Text,
         useColorModeValue,
-        SimpleGrid
       } from '@chakra-ui/react';
 import Oneproject from '../OneProject/Oneproject';
+import projectData from '../../data/projects.json'
 import './Projects.css';
 
 const Projects = () => {
@@ -20,10 +19,14 @@ const Projects = () => {
       </Box>
      </Flex>
       <Flex flexWrap='wrap' justifyContent='center'>
-      <Oneproject/>
-      <Oneproject/>
-      <Oneproject/>
-      <Oneproject/>
+
+      {
+        projectData.map((project)=>{
+          return <Oneproject {...project} key={project.id} />
+        })
+      }
+      
+      
 
       </Flex>
 

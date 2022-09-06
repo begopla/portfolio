@@ -7,38 +7,43 @@ import {
   Image,
   Text,
   useColorModeValue,
+  Link
 } from "@chakra-ui/react";
-import { MdTimer, MdVideoLibrary } from "react-icons/md";
-const Oneproject = () => {
-  let boxBg = useColorModeValue("yellow !important", "#111c44 !important");
+import './Onproject.css';
+const Oneproject = ({name, image, github_url,website_url, description,technologies}) => {
+  let boxBg = useColorModeValue("gray.100", "#111c44");
   let secondaryBg = useColorModeValue("gray.50", "whiteAlpha.100");
   let mainText = useColorModeValue("gray.800", "white");
   let iconBox = useColorModeValue("gray.100", "whiteAlpha.200");
   let iconColor = useColorModeValue("brand.200", "white");
   return (
-    <Box m='2rem 1rem 2rem 1rem'>
+    <Box m='2rem 1rem 2rem 1rem'
+          >
       <Flex
-        borderRadius="20px"
-        border="5px solid red"
+        borderWith={2}
+        borderRadius='20px'
+        border='solid #e2e8f0'
         bg={boxBg}
-        h="345px"
-        w={{ base: "315px", md: "345px" }}
+        h="60vh"
+        w={{ base: "310px", md: "345px" }}
         direction="column"
       >
-        <Box p="20px">
-          <Flex w="100%" mb="10px">
-            <img src="./project-view.jpg" />
+      <Link href={website_url} isExternal>
+        <Box >
+          <Flex w="100%" mb="3px" p="10px 30px" >
+            <Image src={image} maxHeight='18vh'/>
           </Flex>
           <Box>
-            <Text fontWeight="600" color={mainText} w="100%" fontSize="2xl">
-              Venus Product
+            <Text fontWeight="600" color={mainText} w="100%" fontSize="2xl" pl='20px' mb='0.5vh' >
+              {name}
             </Text>
           </Box>
         </Box>
+        </Link>
         <Flex
           bg={secondaryBg}
           w="100%"
-          p="20px"
+          p="10px 2px 10px 20px"
           borderBottomLeftRadius="inherit"
           borderBottomRightRadius="inherit"
           height="100%"
@@ -48,33 +53,17 @@ const Oneproject = () => {
             fontSize="sm"
             color="gray.500"
             lineHeight="24px"
-            pe="40px"
+            pe="15px"
             fontWeight="500"
             mb="auto"
           >
-            You have the opportunity to play this game of life you need to
-            appreciate every moment.
+           {description}
           </Text>
-          {/* <Flex>
-            <Flex me="25px">
-              <Icon as={MdTimer} w="20px" h="20px" me="6px" color="green.400" />
-              <Text color={mainText} fontSize="sm" my="auto" fontWeight="500">
-                85 mins
-              </Text>
-            </Flex>
-            <Flex>
-              <Icon
-                as={MdVideoLibrary}
-                w="20px"
-                h="20px"
-                me="6px"
-                color="red.500"
-              />
-              <Text color={mainText} fontSize="sm" my="auto" fontWeight="500">
-                Video Format
-              </Text>
-            </Flex>
-          </Flex> */}
+          <div className="technologies-container">
+            {technologies.map((eachTechnology) => {
+              return <div className="technologies">{eachTechnology}</div>;
+            })}
+          </div>
         </Flex>
       </Flex>
     </Box>

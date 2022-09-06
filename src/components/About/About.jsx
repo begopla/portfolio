@@ -42,13 +42,13 @@ const About = () => {
             <Text mt='1vh'>
             I build{" "}
           <span className="highlighted"> front and backend websites </span> and
-          web application, check you my work in the{" "}
+          web applications, check you my work in the{" "}
           <span className="highlighted">projects</span> section.
             </Text>
             <Text mt="1vh">
               I'm open to new projects and{" "}
               <span className="highlighted">job oppotunities </span> where I can
-              contribute, learn and grow. If you have an oppotunities that
+              contribute, learn and grow. If you have an opportunities that
               matches my skills and experience,{" "}
               <span className="highlighted">contact me!</span>
             </Text>

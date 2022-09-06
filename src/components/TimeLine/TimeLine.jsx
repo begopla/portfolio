@@ -2,7 +2,6 @@ import React from "react";
 import "./TimeLine.css";
 import { Box, useColorModeValue, Badge } from "@chakra-ui/react";
 
-import experienceData from "../../data/experience.json";
 const TimeLine = ({date, name, institution, description}) => {
   return (
     <Box

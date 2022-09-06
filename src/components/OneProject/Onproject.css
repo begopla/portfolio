@@ -1,0 +1,25 @@
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .technologies {
+    background-color: #90CDF4;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    padding: 8px 10px;
+    color: #718096;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .technologies{
+    font-size: 0.5rem;
+    padding: 5px 10px;
+    font-weight: 700;
+    }
+
+}
+
+
