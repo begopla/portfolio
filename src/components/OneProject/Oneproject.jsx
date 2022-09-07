@@ -55,6 +55,7 @@ const Oneproject = ({
             <Box>
             <IconButton
                     as={Link}
+                    id='icon-buttons'
                     ml='8vw'
                     href={github_url}
                     size={"md"}
@@ -91,6 +92,7 @@ const Oneproject = ({
           direction="column"
         >
           <Text
+            id='project-description'
             fontSize="sm"
             color="gray.500"
             lineHeight="24px"

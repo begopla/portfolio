@@ -24,7 +24,7 @@ const Footer = () => {
         py={4}
       >        
        <Flex justifyContent='center'>
-        <Text>© 2022. Made by <Link href='begonaplarubio.com' isExternal>Begoña Pla Rubio</Link>.</Text>
+        <Text>© 2022. Made by <Link href='/#about' isExternal>Begoña Pla Rubio</Link>.</Text>
        </Flex>
     
       </Container>

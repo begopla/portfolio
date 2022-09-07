@@ -36,7 +36,7 @@ const About = () => {
             <Text mt="2vh" >
               {/* Passioned about technology, I'm devoted to make people's life easier
           by making technology available.*/}
-              I'm a well-rounded engineer and I have found my passioned in
+              I'm a well-rounded engineer and I have found my passion in
               bulding successfull products.
             </Text>
             <Text mt='1vh'>
@@ -47,8 +47,8 @@ const About = () => {
             </Text>
             <Text mt="1vh">
               I'm open to new projects and{" "}
-              <span className="highlighted">job oppotunities </span> where I can
-              contribute, learn and grow. If you have an opportunities that
+              <span className="highlighted">job opportunities </span> where I can
+              contribute, learn and grow. If you have any opportunity that
               matches my skills and experience,{" "}
               <span className="highlighted">contact me!</span>
             </Text>

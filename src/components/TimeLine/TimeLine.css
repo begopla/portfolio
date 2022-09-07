@@ -130,7 +130,7 @@
   margin-left: 12%;
 }  
 .timeline::after {
-    left: 31px;
+    left: 35.8px;
   }
 
 /* Full-width containers */
@@ -142,7 +142,7 @@
 
 /* Make sure that all arrows are pointing leftwards */
   .expcontainer::before {
-    left: 60px;
+    left: 58px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
@@ -150,7 +150,7 @@
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 4%;
+    left: 5%;
 
   }
 
@@ -158,4 +158,25 @@
   .right {
     left: 0%;
   }
+}
+
+@media screen and (max-width: 415px) {
+  .timeline::after {
+    left: 30px;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 4.8%;
+
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .expcontainer::before {
+    left: 57px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
 }

@@ -90,7 +90,7 @@ const Info = () => {
         <Button
           bg={useColorModeValue("blue.200", "gray.800")}
           color={useColorModeValue("black", "white")}
-          width="20vw"
+          width="25vw"
           mt="5vh"
           mb="6rem"
         >

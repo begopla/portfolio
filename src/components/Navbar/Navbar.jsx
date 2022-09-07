@@ -56,7 +56,7 @@ export default function Navbar() {
                   <HashLink to='/#experience'><Text fontWeight="500" mr='2vw'>EXPERIENCE</Text></HashLink> 
                   <HashLink to='/#contact'><Text  fontWeight="500" mr='2vw'>CONTACT</Text></HashLink>
                 </Hide>
-                <Hide below ='400px'>
+                <Hide below ='350px'>
                   <IconButton
                     as={Link}
                     mr='1vw'
@@ -87,11 +87,10 @@ export default function Navbar() {
 								    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
 							    </Button>
                 </Hide>
-                <Show below="400px">
-
+                <Show below="350px">
                   <Button onClick={toggleColorMode}>
 								      {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-							    </Button>
+							    </Button> 
                 </Show>
                 </Flex>
               <Show below ='768px'>
