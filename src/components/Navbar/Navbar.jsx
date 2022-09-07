@@ -162,7 +162,7 @@ export default function Navbar() {
                       </HStack>
                     </MenuItem>
                   </HashLink>
-                    <Hide above="400px"> 
+                    <Hide above="350px"> 
                     <MenuItem>
                       <HStack>
                        <IconButton
