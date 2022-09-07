@@ -22,7 +22,7 @@ import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
-const { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_PUBLIC_KEY } = process.env;
+// const { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_PUBLIC_KEY } = process.env;
 
 const confetti = {
   light: {
@@ -61,10 +61,10 @@ export default function ContactFormWithSocialButtons() {
     setIsLoading(true)
     emailjs
       .sendForm(
-        EMAIL_SERVICE_ID,
-        EMAIL_TEMPLATE_ID,
+        'service_kzet5p9',
+        'template_4eh07r8',
         form.current,
-        EMAIL_PUBLIC_KEY
+        'ISBxMqi9edBg61YKG'
       )
       .then(
         (result) => {
@@ -73,7 +73,8 @@ export default function ContactFormWithSocialButtons() {
           clearInput();
         },
         (error) => {
-          console.log(error.text);
+          console.log(error.text)
+          setError('There is a sever error. Please, send me a email at begonapr@gmail.com');
         }
       );
   };
@@ -168,6 +169,7 @@ export default function ContactFormWithSocialButtons() {
               >
                 <form ref={form} onSubmit={sendEmail}>
                   <VStack spacing={5}>
+                  {error && <h3 className="error"> {error}</h3>}
                     <FormControl isRequired>
                       <FormLabel>Name</FormLabel>
 
