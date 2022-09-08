@@ -4,11 +4,7 @@
         "type": "Academic",
         "institution": "Ironhack",
         "name": "Full Stack Web Development",
-        "description": [
-          "Responsive design with HTML, CSS and JavaScript",
-          "Backend: Server-side and data modeling complexity",
-          "Single-page applications using React.js and the MERN stack"
-        ],
+        "description": "Responsive design with HTML, CSS and JavaScript, backend development with server-side and data modeling complexity and single-page applications using React.js and the MERN stack",
         "date": "Feb22 - Aug22"
     },   
     {
