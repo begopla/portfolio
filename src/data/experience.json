@@ -15,7 +15,7 @@
         "id": "2",
         "type": "Education",
         "institution": "HULT",
-        "name": " Master in Business and Administration",
+        "name": " Master in Business Administration",
         "description": " Going beyond business to study every topic through a global lens, mastering working cross-culturally and leverage disruptive technologies",
         "date": "Oct20 - Aug21"
     },
@@ -41,6 +41,14 @@
         "institution": "KTH Royal Institute of Technology",
         "name": " Master in Science in Machine Design",
         "description": "Two year master's programme in Engineering Design covering product development and its growing complexity driven by raising demands for functionality, sustainability and innovation",
+        "date": "Aug13 - Jun15"
+    }
+    {
+        "id": "6",
+        "type": "Education",
+        "institution": "Technical University of Valencia",
+        "name": " Industrial Engineering",
+        "description": "5 year master's programme in Industrial Engineering.",
         "date": "Aug13 - Jun15"
     }
 ]
