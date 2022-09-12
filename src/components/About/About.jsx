@@ -6,6 +6,7 @@ import {
   useColorModeValue,
   Show,
   Hide,
+  Center,
 } from "@chakra-ui/react";
 
 import "./About.css";
@@ -22,17 +23,17 @@ const About = () => {
         <Box as="h2" fontSize="3xl" fontWeight="600" mt="8vh">
           <span className="about-heading">ABOUT ME</span>
         </Box>
-        <Text mt="2vh" mb="2vh" ml="5vw" mr="5vw" fontSize="large">
+        <Center><Text mt="2vh" mb="2vh" ml="5vw" mr="5vw" fontSize="large">
           Here you can find more information about what I do, my current
           programming and technological skills
-        </Text>
+        </Text></Center>
       </Flex>
       <Show above="768px">
         <Flex>
           <Box mt="10vh" ml="5vw" mr="5vw" width="35%">
-            <Box as="h4" fontSize="3xl" fontWeight="600">
+           <Center> <Box as="h4" fontSize="3xl" fontWeight="600">
               Get to know me!
-            </Box>
+            </Box></Center>
             <Text mt="2vh" >
               {/* Passioned about technology, I'm devoted to make people's life easier
           by making technology available.*/}
@@ -59,7 +60,7 @@ const About = () => {
       </Show>
 
       <Hide above="768px">
-        <Box
+        <Center> <Box
           as="h4"
           fontSize="3xl"
           fontWeight="600"
@@ -68,7 +69,7 @@ const About = () => {
           mr="5vw"
         >
           Get to know me!
-        </Box>
+        </Box></Center>
         <Text mt="1vh" mb="2vh" ml="5vw" mr="5vw">
           Passioned about technology, I'm devoted to make people's life easier
           by making technology available. I'm a well-rounded engineer and I have
@@ -84,6 +85,7 @@ const About = () => {
           my skills and experience,{" "}
           <span className="highlighted">contact me!</span>
         </Text>
+        
         <Skills />
       </Hide>
     </Box>

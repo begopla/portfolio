@@ -8,15 +8,16 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  useColorModeValue
+  useColorModeValue,
+  Center
 } from "@chakra-ui/react";
 const Skills = () => {
   return (
     <Box id="skills" >
       <Flex direction="column" align="flexStart" >
-        <Box as="h4" fontSize="3xl" fontWeight="600" mt="10vh" ml='5vw' >
+       <Center> <Box as="h4" fontSize="3xl" fontWeight="600" mt="10vh" >
           My skills
-        </Box>
+        </Box></Center>
         <Flex direction="column" align="center" margin='0 2rem 0 2rem ' >
         <SimpleGrid columns={[1, 2, 1, 2]} >
           {/* Main Languagues */}
